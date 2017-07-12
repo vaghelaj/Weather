@@ -1,0 +1,68 @@
+body {
+  background-color: #FEEC54;
+  margin: 0;
+  padding: 0;
+}
+
+#Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#Weather-Container {
+  width: 400px;
+  height: 200px;
+  padding: 15px;
+}
+
+h2 {
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: 2px;
+  color: #262626;
+  margin: 0;
+  text-align: center;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  color: #262626;
+}
+
+#description {
+  margin: 5px 0 0 0;
+  text-align: center;
+  color: #262626;
+}
+
+#temperature {
+  text-align: center;
+  font-size: 85px;
+  margin: 10px 0 0 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.row p {
+  margin-top: 28px;
+}
+
+#footer {
+  text-align: center;
+}
+
+a {
+  color: #262626;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  background-color: #262626;
+}
