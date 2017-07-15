@@ -60,6 +60,7 @@ body, html {
 
 #temperature {
   font-family: "Avenir-Black";
+  text-decoration: underline;
 }
 
 .Side-Info {

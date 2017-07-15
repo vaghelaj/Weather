@@ -6,11 +6,13 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+  <!--Main Wrapper that everything is contained under-->
   <div id="Wrapper">
     <div id="Container">
 
       <div id="Header">
         <h1>Weather App</h1>
+        <!--The Thermometer svg-->
         <svg version="1.1" id="Thermometer" width="100px" height="100px" viewBox="0 0 16 100" xml:space="preserve">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M50,67.867c-4.418,0-8-3.582-8-8c0-2.025,0.76-3.869,2-5.279V37.871
         	c0-3.313,2.686-6,6-6c3.312,0,6,2.687,6,6v16.717c1.24,1.41,1.998,3.254,1.998,5.279C57.998,64.285,54.418,67.867,50,67.867z
@@ -20,8 +22,10 @@
         </svg>
       </div>
 
+      <!--The main information-->
       <h2 id="Temperature-Info">The Temperature in <span id="city"></span>, <span id="region"></span> is <span id="temperature"></span> celsius.</h2>
 
+      <!--The additon information about the weather-->
       <div class="Side-Info">
         <span class="label number-1">High</span><p id="temperatureMax"></p>
         <span class="label number-2">Low</span><p id="temperatureMin"></p>
@@ -29,6 +33,7 @@
 
     </div>
 
+    <!--Footer-->
     <p id="footer">By Jayesh</p>
   </div>
   <script src="main.js"></script>
