@@ -1,68 +1,106 @@
-body {
-  background-color: #FEEC54;
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+@font-face {
+  font-family: "Avenir-Medium";
+  src: url('AvenirLTStd-Medium.otf');
+}
+
+@font-face {
+  font-family: "Avenir-Black";
+  src: url('AvenirLTStd-Black.otf');
+}
+
+@font-face {
+  font-family: "Avenir-Heavy";
+  src: url('AvenirLTStd-Heavy.otf');
+}
+
+body, html {
   margin: 0;
   padding: 0;
 }
 
-#Container {
+#Wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
+  background-color: #FEEE7D;
 }
 
-#Weather-Container {
-  width: 400px;
-  height: 200px;
-  padding: 15px;
+#Container {
+  width: 824px;
+  height: 391px;
 }
 
-h2 {
-  font-family: 'Fjalla One', sans-serif;
-  letter-spacing: 2px;
-  color: #262626;
-  margin: 0;
-  text-align: center;
+#Header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-p {
-  font-family: 'Raleway', sans-serif;
-  color: #262626;
+#Header h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 48px;
+  color: #F15C5C;
+  margin: 0 0 0 3px;
 }
 
-#description {
-  margin: 5px 0 0 0;
-  text-align: center;
-  color: #262626;
+#Thermometer {
+  fill: #F15C5C;
+}
+
+#Temperature-Info {
+  font-family: "Avenir-Medium";
+  font-size: 64px;
+  color: #F15C5C;
+  width: 558px;
 }
 
 #temperature {
-  text-align: center;
-  font-size: 85px;
-  margin: 10px 0 0 0;
+  font-family: "Avenir-Black";
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  text-align: center;
+.Side-Info {
+  position: relative;
+  bottom: 279px;
+  font-family: "Avenir-Heavy";
+  font-size: 48px;
+  color: #F15C5C;
+  float: right;
 }
 
-.row p {
-  margin-top: 28px;
+.Side-Info p {
+  margin: 0;
+}
+
+#temperatureMax {
+  margin-bottom: 20px;
+}
+
+.label {
+  font-size: 18px;
+}
+
+.number-1 {
+  position: absolute;
+  right: 60px;
+  top: 14px;
+  transform: rotate(-90deg);
+}
+
+.number-2 {
+  position: absolute;
+  right: 60px;
+  top: 91px;
+  transform: rotate(-90deg);
+  font-size: 18px;
 }
 
 #footer {
-  text-align: center;
-}
-
-a {
-  color: #262626;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #fff;
-  background-color: #262626;
+  font-family: "Avenir-Medium";
+  color: #F15C5C;
+  position: absolute;
+  bottom: 0;
 }

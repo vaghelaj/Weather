@@ -1,11 +1,8 @@
-var container = document.getElementById('Weather-Container');
 var city = document.getElementById('city');
-var description = document.getElementById('description');
+var region = document.getElementById('region');
 var temperature = document.getElementById('temperature');
 var temperatureMax = document.getElementById('temperatureMax');
 var temperatureMin = document.getElementById('temperatureMin');
-var humidity = document.getElementById('humidity');
-var pressure = document.getElementById('pressure');
 
 var locationResponse;
 var request = new XMLHttpRequest();
@@ -23,7 +20,6 @@ request.onload = function() {
 
     request.send();
 };
-
 request.send();
 
 function renderInformation(serverLocationResponse, serverWeatherResponse) {
@@ -32,10 +28,8 @@ function renderInformation(serverLocationResponse, serverWeatherResponse) {
     var tempMax = Math.floor(serverWeatherResponse.main.temp_max - 273.15);
     var tempMin = Math.floor(serverWeatherResponse.main.temp_min - 273.15);
     city.innerHTML = serverLocationResponse.city;
-    temperature.innerHTML = temp + "°";
-    description.innerHTML = serverWeatherResponse.weather[0].description.charAt(0).toUpperCase() + serverWeatherResponse.weather[0].description.slice(1);
-    temperatureMax.innerHTML = "Max: " + tempMax + "°";
-    temperatureMin.innerHTML = "Min: " + tempMin + "°";
-    humidity.innerHTML = "Humidity: " + serverWeatherResponse.main.humidity + "%";
-    pressure.innerHTML = "Pressure: " + serverWeatherResponse.main.pressure + " hPa";
+    region.innerHTML = serverLocationResponse.region.substring(0,2).toUpperCase();
+    temperature.innerHTML = temp;
+    temperatureMax.innerHTML =tempMax;
+    temperatureMin.innerHTML = tempMin;
 }
