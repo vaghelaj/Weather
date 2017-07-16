@@ -25,7 +25,6 @@ request.send();
 
 //This function renders all the inner HTML of the elements.
 function renderInformation(serverLocationResponse, serverWeatherResponse) {
-
     city.innerHTML = serverLocationResponse.city;
     region.innerHTML = serverLocationResponse.region.substring(0,2).toUpperCase();
     temperature.innerHTML = Math.floor(serverWeatherResponse.main.temp);
