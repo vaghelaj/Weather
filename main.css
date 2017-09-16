@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
-
 @font-face {
   font-family: "Avenir-Medium";
   src: url('AvenirLTStd-Medium.otf');
@@ -41,7 +39,7 @@ body, html {
 }
 
 #Header h1 {
-  font-family: 'Merriweather', serif;
+  font-family: "Avenir-Heavy";
   font-size: 48px;
   color: #F15C5C;
   margin: 0 0 0 3px;
