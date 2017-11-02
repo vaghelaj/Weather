@@ -15,7 +15,7 @@ request.onload = function() {
 
     locationResponse = JSON.parse(request.responseText);
     //Using the fetched location for getting the current weather information.
-    request.open('GET', 'http://api.openweathermap.org/data/2.5/weather?q=%27'+locationResponse.city+'+%27&appid=f5ca140b6db0de13daabb40571994509&units=metric', true);
+    request.open('GET', 'https://api.openweathermap.org/data/2.5/weather?q=%27'+locationResponse.city+'+%27&appid=f5ca140b6db0de13daabb40571994509&units=metric', true);
     request.onload = function () {
         weatherResponse = JSON.parse(request.responseText);
         renderInformation(locationResponse, weatherResponse);
