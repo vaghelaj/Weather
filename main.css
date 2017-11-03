@@ -1,16 +1,16 @@
 @font-face {
   font-family: "Avenir-Medium";
-  src: url('AvenirLTStd-Medium.otf');
+  src: url('./Fonts/AvenirLTStd-Medium.otf');
 }
 
 @font-face {
   font-family: "Avenir-Black";
-  src: url('AvenirLTStd-Black.otf');
+  src: url('./Fonts/AvenirLTStd-Black.otf');
 }
 
 @font-face {
   font-family: "Avenir-Heavy";
-  src: url('AvenirLTStd-Heavy.otf');
+  src: url('./Fonts/AvenirLTStd-Heavy.otf');
 }
 
 body, html {
@@ -20,8 +20,14 @@ body, html {
 
 #Wrapper {
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   height: 100%;
   background-color: #FEEE7D;
 }
@@ -80,21 +86,17 @@ body, html {
 
 .label {
   font-size: 18px;
+  position: absolute;
+  right: 60px;
+  transform: rotate(-90deg);
 }
 
 .number-1 {
-  position: absolute;
-  right: 60px;
   top: 14px;
-  transform: rotate(-90deg);
 }
 
 .number-2 {
-  position: absolute;
-  right: 60px;
   top: 91px;
-  transform: rotate(-90deg);
-  font-size: 18px;
 }
 
 #footer {
