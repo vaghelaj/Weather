@@ -6,7 +6,6 @@ var temperatureMax = document.getElementById('temperatureMax');
 var temperatureMin = document.getElementById('temperatureMin');
 var locationResponse;
 var weatherResponse;
-var counter = 1;
 
 var request = new XMLHttpRequest();
 //Setting up a connection with the ip info, which fetchs the user's location.
@@ -18,8 +17,6 @@ request.onload = function() {
     request.open('GET', 'https://api.openweathermap.org/data/2.5/weather?q=%27'+locationResponse.city+'+%27&appid=f5ca140b6db0de13daabb40571994509&units=metric', true);
     request.onload = function () {
         weatherResponse = JSON.parse(request.responseText);
-        renderInformation(locationResponse, weatherResponse);
-        setInterval(request.onload, 5000);
     };
     request.send();
 };
