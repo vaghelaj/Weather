@@ -17,6 +17,7 @@ request.onload = function() {
     request.open('GET', 'https://api.openweathermap.org/data/2.5/weather?q=%27'+locationResponse.city+'+%27&appid=f5ca140b6db0de13daabb40571994509&units=metric', true);
     request.onload = function () {
         weatherResponse = JSON.parse(request.responseText);
+        renderInformation(locationResponse, weatherResponse)
     };
     request.send();
 };
@@ -30,5 +31,4 @@ function renderInformation(serverLocationResponse, serverWeatherResponse) {
     temperature.innerHTML = Math.floor(serverWeatherResponse.main.temp);
     temperatureMax.innerHTML = Math.floor(serverWeatherResponse.main.temp_max);
     temperatureMin.innerHTML = Math.floor(serverWeatherResponse.main.temp_min);
-    console.log(counter++);
 }
