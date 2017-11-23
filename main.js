@@ -29,7 +29,7 @@ request.onload = () => {
       console.log("Something Happen!");
     }
     request.send();
-  }
+  } 
 };
 
 //Printing "Something Happen!" in the console when an error occurs.
