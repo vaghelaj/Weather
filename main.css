@@ -16,6 +16,7 @@
 body, html {
   margin: 0;
   padding: 0;
+    background-color: #FEEE7D;
 }
 
 #Wrapper {
@@ -29,7 +30,6 @@ body, html {
   -webkit-box-align: center;
   -ms-flex-align: center;
   height: 100%;
-  background-color: #FEEE7D;
 }
 
 #Container {
@@ -46,7 +46,7 @@ body, html {
 
 #Header h1 {
   font-family: "Avenir-Heavy";
-  font-size: 48px;
+  font-size: 50px;
   color: #F15C5C;
   margin: 0 0 0 3px;
 }
